@@ -2,20 +2,45 @@
 <html>
 <head>
     <title>Player Information</title>
+        <style>
+        body {
+            background-color: #f0f0f0; /* Gray background color */
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Player Information</h1>
-<hr>    
-    <!-- Player's Name -->
-    <p><strong>Name:keith earls</strong></p>
-<hr>
-    <!-- Player's Age -->
-    <p><strong>Age:20</strong></p>
-<hr>
-    <!-- Player's Division -->
-    <p><strong>Division:U21</strong></p>
-<hr>
-    <!-- Player's Image -->
-    <img src="player_image.jpg" alt="Player Image" width="200" height="200">
+        <table>
+        <tr>
+            <td rowspan="4"><img src="player_image.jpg" alt="Player Image"></td>
+            <th>Name:</th>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <th>Age:</th>
+            <td>25</td>
+        </tr>
+        <tr>
+            <th>Division:</th>
+            <td>A Division</td>
+        </tr>
+    </table>
 </body>
+
 </html>
