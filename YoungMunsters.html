@@ -1,50 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Player Information</title>
-        <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
         body {
-            background-color: #f0f0f0; /* Gray background color */
-            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Display items vertically */
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2; /* Light gray background color */
         }
-                    h1 {
-            text-align: center; /* Center-align text within the h1 tag */
+
+        #header {
+            text-align: center;
         }
-        table {
-            width: 50%;
-            margin: 20px auto;
-            border-collapse: collapse;
+
+        #header img {
+            width: 100px; /* Adjust the width as needed */
+            height: 100px; /* Adjust the height as needed */
         }
-        table, th, td {
-            border: 1px solid #ccc;
+
+        #header p {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
+
+        #header a {
+            text-decoration: none;
         }
+
+        div {
+            text-align: center;
+            margin: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
         img {
-            max-width: 100%;
-            height: auto;
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 200px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+		#sponsors {
+            text-align: center;
+        }
+
+        #sponsors p {
+            font-weight: bold;
+        }
+
+        .sponsor {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .sponsor img {
+            width: 50px;
+            height: 50px;
         }
     </style>
 </head>
 <body>
-    <h1>player information</h1>
-        <table>
-        <tr>
-            <td rowspan="4"><img src="player_image.jpg" alt="Player Image" width="200" height="200"></td>
-            <th>Name:</th>
-            <td>Keith Earls</td></td>
-        </tr>
-        <tr>
-            <th>Age:</th>
-            <td>20</td>
-        </tr>
-        <tr>
-            <th>Division:</th>
-            <td>U21</td>
-        </tr>
-    </table>
-</body>
+    <div id="header">
+        <a href="http://www.youngmunster.com/">
+            <img src="ymun.png" alt="Logo">
+        </a>
+        <p>Young Munsters</p>
+    </div>
 
+    <div>
+        <a href="u21.html">
+            <img src="u21.jpg" alt="U21">
+            <p>U21</p>
+        </a>
+    </div>
+
+    <div>
+        <a href="u18.html">
+            <img src="u18.jpg" alt="U18">
+            <p>U18</p>
+        </a>
+    </div>
+
+    <div>
+        <a href="u16.html">
+            <img src="u16.jpg" alt="U16">
+            <p>U16</p>
+        </a>
+    </div>
+	    <div id="sponsors">
+        <p>Sponsors</p>
+        <div class="sponsor">
+            <a href="https://aib.ie/">
+                <img src="aib.jpg" alt="Sponsor 1">
+            </a>
+        </div>
+        <div class="sponsor">
+            <a href="https://n.vodafone.ie/">
+                <img src="vodafone.jpg" alt="Sponsor 2">
+            </a>
+        </div>
+        <div class="sponsor">
+            <a href="https://supermacs.ie/">
+                <img src="SuperMacs.jpg" alt="Sponsor 3">
+            </a>
+        </div>
+    </div>
+</body>
 </html>
